@@ -47,6 +47,27 @@ I've fetched the critical CSS with grunt-critical-css. The critical CSS is colle
 
 Although the performance has not been improved, a more essential part is added. As you can see, the rendering time is slightly higher compared with the last result, though the user' page will shown faster.  
 
+### Service Worker  
+In the last stage I have added a Service Worker which will cache the HTML, CSS and Javascript. This way the site is able to run offline after it has been cached. A multitude of files can be stored there for later use.  
+The code is here below:  
+``` 
+this.addEventListener('install', event => {
+  event.waitUntil(
+    caches.open('bundlin-serviceworker').then(cache => {
+      return cache.addAll([
+        './index.html',
+        './css/app.css',
+        './css/vendor.css',
+        './js/app.js',
+        './js/vendor.js',
+        './images/*.jpg',
+        './images/*.png'
+      ]);
+    })
+  );
+});
+```
+
 ## Conclusion 
 
 Bundlin is already been built with thought and precision, but there is still some things left to improve. As seen in the document above; the data that is being fetched is downloaded as a whole and rendered with `ng-repeat`. This can be heavy for the browser and will take the page longer to load. 
