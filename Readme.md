@@ -3,7 +3,7 @@ The beauty of the web bundled
 
 ## Intro  
 This project is an assignment from CMD Amsterdam - Everything Web. The goal is to improve the existing site http://bundlin.com.  
-Al my results have been documented in the Readme here.  
+All my results have been documented in the Readme here.  
 
 ## Initial  
 First i checked the initial performance of the site. All testing has been done on a 5GH wifi network.  
