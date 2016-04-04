@@ -6,7 +6,7 @@ This project is an assignment from CMD Amsterdam - Everything Web. The goal is t
 All my results have been documented in the Readme here.  
 
 ## Initial  
-First i checked the initial performance of the site. All testing has been done on a 5GH wifi network.  
+First i checked the initial performance of the site. All testing has been done on a 5GHz wifi network.  
 The first perfomance check took quite a while.
 
 ![init](readme-images/start.png)  
